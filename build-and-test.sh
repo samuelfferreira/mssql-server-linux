@@ -1,6 +1,6 @@
 clear 
 
-docker build . --no-cache -t luizcarlosfaria/mssql-server-linux:latest
+docker build . --no-cache -t samuelfferreira/mssql-server-linux:latest
 
 docker run \
 --rm \
@@ -12,4 +12,4 @@ docker run \
 -e 'MSSQL_USER=bbb' \
 -e 'MSSQL_PASSWORD=ccc' \
 -p 1433:1433 \
-luizcarlosfaria/mssql-server-linux:latest
+samuelfferreira/mssql-server-linux:latest
